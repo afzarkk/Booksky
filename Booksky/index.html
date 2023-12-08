@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notesky</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Navbar">
+      <h1>Notesky</h1>
+    </div>
+    <div class="container">
+      <div class="book-container">
+        <h2>Coldest City</h2>
+        <h5>Dras, Ladakh</h5>
+        <p>
+          The coldest city in India is Dras, a town located in the Union Territory of Ladakh. Dras is often referred to as the “Gateway to Ladakh” because it is the first major town that visitors encounter when traveling from India to Ladakh.
+        </p>
+        <button onclick="deletenotes(event)">Delete</button>
+      </div>
+    </div>
+    <div class="popup-overlay">
+      <div class="content">
+        <div class="popup-box">
+          <h2>Add Notes</h2>
+          <!-- <button class="close" id="close-btn">X</button> -->
+          <form>
+            <input type="text" placeholder="Title" id="title-input" />
+            <input type="date" id="title-date"/>
+            <textarea placeholder="Short Description" id="description-input" ></textarea>
+            <button id="add-notes">Add</button>
+            <button id="clear-popup">Clear</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
